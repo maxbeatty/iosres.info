@@ -335,10 +335,10 @@ ol li {
   padding-left: 3px;
 }
 
-dl dd {
+/*dl dd {
   font-style: italic;
   font-weight: 100;
-}
+}*/
 
 footer {
   background: transparent url('../images/hr.png') 0 0 no-repeat;
