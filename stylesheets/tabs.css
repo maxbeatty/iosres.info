@@ -1,0 +1,72 @@
+/* 
+* Huge credit to Chris Coyier 
+* http://css-tricks.com/examples/CSSTabs/radio.php#source-code
+*/
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  position: relative;
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  left: 1px; 
+}
+
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #444;
+}
+
+.tab [type=radio] {
+  display: none;   
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background: white;
+  
+  overflow: hidden;
+}
+
+.content.outer {
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+.content .tabs {
+  margin: 10px 0;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 1;
+}
+
+[type=radio]:checked ~ label ~ .outer {
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content .tabs label {
+  z-index: 3;
+}
+
+[type=radio]:checked ~ label ~ .content [type=radio]:checked ~ label ~ .content {
+  z-index: 4;
+}
