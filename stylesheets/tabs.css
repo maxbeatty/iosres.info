@@ -9,14 +9,8 @@
   min-height: 20em; /* This part sucks */
   clear: both;
   margin: 25px 0;
-  width: 318px; /* derp */
-  /*border: 1px solid #ccc;*/
+  width: 320px; /* derp */
 }
-
-/*.tabs .tabs {
-  border-left: 0;
-  border-color: #ddd;
-}*/
 
 .content .tabs {
   margin: 0;
@@ -25,8 +19,7 @@
 /*** TAB ***/
 .tab {
   float: left;
-  width: 159px;
-  /*background: peachpuff;*/
+  width: 160px; 
 }
 
 .content .tab {
@@ -41,7 +34,7 @@
 .tab label {
   position: relative;
   display: inline-block;
-  width: 139px; /* 159px .tab - 10px padding * 2 */
+  width: 140px; /* 160px .tab - 10px padding * 2 */
   padding: 10px;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
@@ -51,7 +44,7 @@
 }
 
 .content label {
-  width: 133px;
+  width: 134px;
   margin-left: 3px;
   margin-right: 3px;
   background-color: #9ddcff;
