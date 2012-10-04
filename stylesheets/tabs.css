@@ -2,61 +2,92 @@
 * Huge credit to Chris Coyier 
 * http://css-tricks.com/examples/CSSTabs/radio.php#source-code
 */
+
+/*** tabs container ***/
 .tabs {
   position: relative;   
-  min-height: 200px; /* This part sucks */
+  min-height: 20em; /* This part sucks */
   clear: both;
   margin: 25px 0;
+  width: 318px; /* derp */
+  /*border: 1px solid #ccc;*/
 }
 
+/*.tabs .tabs {
+  border-left: 0;
+  border-color: #ddd;
+}*/
+
+.content .tabs {
+  margin: 0;
+}
+
+/*** TAB ***/
 .tab {
   float: left;
+  width: 159px;
+  /*background: peachpuff;*/
 }
 
-.tab label {
-  position: relative;
-  background: #eee; 
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  margin-left: -1px; 
-  left: 1px; 
-}
-
-label:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: #444;
+.content .tab {
+  background: #307acf;
 }
 
 .tab [type=radio] {
   display: none;   
 }
 
+/*** LABEL for tab ***/
+.tab label {
+  position: relative;
+  display: inline-block;
+  width: 139px; /* 159px .tab - 10px padding * 2 */
+  padding: 10px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-top: 5px;
+  background-color: #eee;
+  color: #888;
+}
+
+.content label {
+  width: 133px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: #9ddcff;
+  color: #4879d0;
+}
+
+label:hover {
+  cursor: pointer;
+  color: #474747;
+}
+
+/*** CONTENT for tab ***/
 .content {
   position: absolute;
-  top: 28px;
+  top: 42px; /* TODO: figure out why */
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 20px;
-  background: white;
-  
+  background: #fff; /* to hide what's behind */
   overflow: hidden;
 }
 
+.content .content {
+  left: 3px;
+  right: 3px;
+}
+
 .content.outer {
-  padding: 0;
-  border: 1px solid #ccc;
+  background-color: #307acf;
 }
 
-.content .tabs {
-  margin: 10px 0;
-}
-
+/*** layering of tabs, marking as active ***/
 [type=radio]:checked ~ label {
-  background: white;
-  border-bottom: 1px solid white;
   z-index: 1;
+  background-color: #307acf;
+  color: #fff;
 }
 
 [type=radio]:checked ~ label ~ .outer {
@@ -67,6 +98,10 @@ label:hover {
   z-index: 3;
 }
 
+[type=radio]:checked ~ label ~ .content [type=radio]:checked ~ label {
+  background-color: #fdfdfd;
+  color: #666;
+}
 [type=radio]:checked ~ label ~ .content [type=radio]:checked ~ label ~ .content {
   z-index: 4;
 }
