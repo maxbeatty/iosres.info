@@ -7,72 +7,69 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen" />
-    
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
     <title>iOS Resolution Info</title>
   </head>
 
   <body>
     <article role="main">
-      <!-- <h3> your resolution is ... </h3> -->
 
       <div class="tabs">
       
         <div class="tab">
-          <input type="radio" id="tab-1" name="tab-group-1" checked="">
+          <input type="radio" id="tab-1" name="tab-group-1" checked="checked">
           <label for="tab-1">Resolution</label>
            
           <div class="content outer">
             <div class="tabs">
             
               <div class="tab">
-                <input type="radio" id="tab-1-1" name="tab-group-1-1" checked="">
+                <input type="radio" id="tab-1-1" name="tab-group-1-1" checked="checked">
                 <label for="tab-1-1">Pixels</label>
                  
                 <div class="content">
-                  <table>
-                    <tr>
-                      <th>480 &times; 320</th>
-                      <td>
-                        iPhone<br>
-                        iPhone 3G<br>
-                        iPhone 3GS<br>
-                        iPod Touch 1st - 3rd Gen
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>960 &times; 640</th>
-                      <td>
-                        iPhone 4<br>
-                        iPod Touch 4th Gen
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>1136 &times; 640</th>
-                      <td>
-                        iPhone 5<br>
-                        iPod Touch 5th Gen
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>1024 &times; 768</th>
-                      <td>
-                        iPad <br>
-                        iPad 2
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>2048 &times; 1536</th>
-                      <td>
-                        iPad 3rd Gen
-                      </td>
-                    </tr>
-                  </table>
+                  <dl>
+                    <dt>480 &times; 320</dt>
+                    <dd>
+                      <ol>
+                        <li>iPhone</li>
+                        <li>iPhone 3G</li>
+                        <li>iPhone 3GS</li>
+                        <li>iPod Touch 1st - 3rd Gen</li>
+                      </ol>
+                    </dd>
+                    
+                    <dt>960 &times; 640</dt>
+                    <dd>
+                      <ol>
+                        <li>iPhone 4</li>
+                        <li>iPod Touch 4th Gen</li>
+                      </ol>
+                    </dd>
+
+                    <dt>1136 &times; 640</dt>
+                    <dd>
+                      <ol>
+                        <li>iPhone 5</li>
+                        <li>iPod Touch 5th Gen</li>
+                      </ol>
+                    </dd>
+
+                    <dt>1024 &times; 768</dt>
+                    <dd>
+                      <ol>
+                        <li>iPad</li>
+                        <li>iPad 2</li>
+                      </ol>
+                    </dd>
+                    
+                    <dt>2048 &times; 1536</dt>
+                    <dd>
+                      <ol>
+                        <li>iPad 3rd Gen</li>
+                      </ol>
+                    </dd>
+                  </dl>
                 </div> 
               </div>
 
@@ -84,32 +81,38 @@
                   <dl>
                     <dt>480 &times; 320</dt>
                     <dd>
-                      iPhone
-                      iPhone 3G
-                      iPhone 3GS
-                      iPod Touch 1st - 3rd Gen
-                      iPhone 4
-                      iPod Touch 4th Gen
+                      <ol>
+                        <li>iPhone</li>
+                        <li>iPhone 3G</li>
+                        <li>iPhone 3GS</li>
+                        <li>iPod Touch 1st - 3rd Gen</li>
+                        <li>iPhone 4</li>
+                        <li>iPod Touch 4th Gen</li>
+                      </ol>
                     </dd>
 
                     <dt>568 &times; 320</dt>
                     <dd>
-                      iPhone 5
-                      iPod Touch 5th Gen
+                      <ol>
+                        <li>iPhone 5</li>
+                        <li>iPod Touch 5th Gen</li>
+                      </ol>
                     </dd>
 
                     <dt>1024 &times; 768</dt>
                     <dd>
-                      iPad
-                      iPad 2
-                      iPad 3rd Gen
+                      <ol>
+                        <li>iPad</li>
+                        <li>iPad 2</li>
+                        <li>iPad 3rd Gen</li>
+                      </ol>
                     </dd>
                   </dl>
-                </div> 
-              </div>
-            </div>
-          </div> 
-        </div>
+                </div> <!-- content -->
+              </div> <!-- tab -->
+            </div> <!-- tabs -->
+          </div> <!-- content -->
+        </div> <!-- tab -->
 
         <div class="tab">
           <input type="radio" id="tab-2" name="tab-group-1">
@@ -119,42 +122,52 @@
             <div class="tabs">
             
               <div class="tab tab-slim">
-                <input type="radio" id="tab-2-1" name="tab-group-1-2" checked="">
+                <input type="radio" id="tab-2-1" name="tab-group-1-2" checked="checked">
                 <label for="tab-2-1">iPhone</label>
                  
                 <div class="content">
-                  iPhone
-                  480 × 320 px/pt
-                  iPhone 3G
-                  480 × 320 px/pt
-                  iPhone 3GS
-                  480 × 320 px/pt
-                  iPhone 4
-                  960 × 640 px
-                  480 x 320 pt
-                  iPhone 4S
-                  960 x 640 px
-                  480 x 320 pt
-                  iPhone 5
-                  1136 x 640 px
-                  568 x 320 pt
-                  
-                </div> 
-              </div>
+                  <dl class="horizontal">
+                    <dt>Original</dt>
+                    <dd>480 &times; 320 px/pt</dd>
+                    
+                    <dt>iPhone 3G</dt>
+                    <dd>480 &times; 320 px/pt</dd>
+                    
+                    <dt>iPhone 3GS</dt>
+                    <dd>480 &times; 320 px/pt</dd>
+                    
+                    <dt>iPhone 4</dt>
+                    <dd>960 &times; 640 px</dd>
+                    <dd>480 &times; 320 pt</dd>
+
+                    <dt>iPhone 4S</dt>
+                    <dd>960 &times; 640 px</dd>
+                    <dd>480 &times; 320 pt</dd>
+
+                    <dt>iPhone 5</dt>
+                    <dd>1136 &times; 640 px</dd>
+                    <dd>568 &times; 320 pt</dd>
+                  </dl>
+                </div> <!-- content -->
+              </div> <!-- tab -->
 
               <div class="tab tab-slim">
                 <input type="radio" id="tab-2-2" name="tab-group-1-2">
                 <label for="tab-2-2">iPad</label>
                
                 <div class="content">
-                  iPad
-                  1024 × 768 px/pt
-                  iPad 2
-                  1024 × 768 px/pt
-                  iPad 3rd Gen
-                  2048 × 1536 px
-                  1024 x 768 pt
-                </div> 
+                  <dl class="horizontal">
+                    <dt>Original</dt>
+                    <dd>1024 &times; 768 px/pt</dd>
+
+                    <dt>iPad 2</dt>
+                    <dd>1024 &times; 768 px/pt</dd>
+
+                    <dt>iPad 3rd Gen</dt>
+                    <dd>2048 &times; 1536 px</dd>
+                    <dd>1024 &times; 768 pt</dd>
+                  </dl>
+                </div> <!-- content -->
               </div> <!-- tab -->
 
               <div class="tab tab-slim">
@@ -162,14 +175,18 @@
                 <label for="tab-2-3">iPod Touch</label>
                
                 <div class="content">
-                  1st - 3rd Gen
-                  480 × 320 px
-                  4th Gen
-                  960 x 640 px
-                  5th Gen
-                  1136 x 640 px
-                  568 x 320 pt
-                </div> 
+                  <dl class="horizontal">
+                    <dt>1st - 3rd Gen</dt>
+                    <dd>480 &times; 320 px</dd>
+                    
+                    <dt>4th Gen</dt>
+                    <dd>960 &times; 640 px</dd>
+                    
+                    <dt>5th Gen</dt>
+                    <dd>1136 &times; 640 px</dd>
+                    <dd>568 &times; 320 pt</dd>
+                  </dl>
+                </div> <!-- content -->
               </div> <!-- tab -->
             </div> <!-- tabs -->
           </div>  <!-- content.outer -->
