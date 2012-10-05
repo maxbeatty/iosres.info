@@ -76,6 +76,57 @@ article h1:before {
   margin-left: -2em;
 }
 
+dt {
+  font-weight: 500;
+  padding-left: 2em;
+  background-color: #f6f6f6
+}
+
+dd {
+  margin-left: 2em
+}
+
+.horizontal dt, .horizontal dd {
+  float: left;
+}
+
+.horizontal dt {
+  border: 0;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  background-color: transparent;
+}
+
+.horizontal dt,
+.horizontal dt + dd {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #f6f6f6;
+}
+
+.horizontal dt:first-child,
+.horizontal dt:first-child + dd {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.horizontal dd {
+  margin-left: 0;
+  padding-left: 1em;
+  width: 169px; /* to extend border */
+}
+
+.horizontal dd + dd {
+  margin-left: 130px; /* to wrap next ones around and align */
+}
+
+ol {
+  list-style-type: circle;
+  margin: 0.5em 1em 1em;
+  padding: 0;
+}
+
 /* #Media Queries
 ================================================== */
 

@@ -1,4 +1,0 @@
-html * { display: none;}
-html:before {
-  content: 'Please don\'t print this. Bookmark instead :D';
-}
