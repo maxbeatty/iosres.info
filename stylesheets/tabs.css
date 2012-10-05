@@ -22,6 +22,10 @@
   width: 160px; 
 }
 
+.tab-slim {
+  width: 106px;
+}
+
 .content .tab {
   background: #307acf;
 }
@@ -41,6 +45,11 @@
   margin-top: 5px;
   background-color: #eee;
   color: #888;
+  text-align: center
+}
+
+.content .tab-slim label {
+  width: 82px;
 }
 
 .content label {
