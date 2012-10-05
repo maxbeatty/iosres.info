@@ -6,9 +6,9 @@
 /*** tabs container ***/
 .tabs {
   position: relative;   
-  min-height: 20em; /* This part sucks */
+  min-height: 600px; /* This part sucks */
   clear: both;
-  margin: 25px 0;
+  margin: 0 auto;
   width: 320px; /* derp */
 }
 
