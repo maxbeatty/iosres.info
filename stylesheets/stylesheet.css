@@ -102,7 +102,7 @@ dd {
 .horizontal dt + dd {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #f6f6f6;
+  border-top: 1px solid #efefef;
 }
 
 .horizontal dt:first-child,
