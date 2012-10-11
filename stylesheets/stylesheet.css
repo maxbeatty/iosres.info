@@ -58,6 +58,7 @@ header h2 {
 header .button {
   display: block;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  text-decoration: none;
 }
 
 article h1 {
