@@ -83,8 +83,39 @@ dt {
   background-color: #f6f6f6
 }
 
+dt span {
+  color: #ebebeb;
+  padding-left: 1em;
+  font-weight: 300;
+}
+
 dd {
   margin-left: 2em
+}
+
+.key {
+  position: absolute;
+  top: 8px;
+  left: 150px;
+  color: #efefef;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.key.r {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FAFAFA;
+  color: #dfdfdf;
+  padding-left: 37px;
+  letter-spacing: 4px;
+  line-height: 22px;
+  
+}
+
+.key.r + dl {
+  margin-top: 22px;
 }
 
 .horizontal dt, .horizontal dd {
