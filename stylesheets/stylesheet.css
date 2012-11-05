@@ -79,7 +79,7 @@ article h1:before {
 }
 
 article h1 small {
-  
+
 }
 
 article h1 small:before {
@@ -121,8 +121,8 @@ dd {
   color: #dfdfdf;
   padding-left: 37px;
   letter-spacing: 4px;
+  height: 22px;
   line-height: 22px;
-  
 }
 
 .key.r + dl {
