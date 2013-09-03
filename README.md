@@ -66,3 +66,11 @@ iosres.info
 - 5th Gen
   - 1136 x 640 px
   - 568 x 320 pt
+  
+----
+
+_Why did I put this together?_
+
+I had a need to reference these dimensions in one, easy-to-navigate place.
+
+I also wanted to push the limits of CSS. The tabs are entirely controlled [by CSS](https://github.com/maxbeatty/iosres.info/blob/gh-pages/stylesheets/tabs.css) 😁
